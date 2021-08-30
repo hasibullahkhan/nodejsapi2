@@ -1,14 +1,23 @@
-const config = {
-    user: 'sa',
-    password: 'dell',
-    server: '127.0.0.1',
-    database: 'EmployeeDB',
-    options: {
-        trustedconnection: true,
-        enableArithAort: true,
-        instancename: 'USER-PC'
+let config = {
+    server: 'localhost',
+    authentication: {
+        type: 'default',
+        options: {
+            userName: 'sa', // update me
+            password: 'dell' // update me
+        }
     },
-    port: 1433
+    options: {
+        database: 'EmployeeDB',
+        validateBulkLoadParameters: true,
+        encrypt: false,
+    }
 }
+
+
+
+
+
+
 
 module.exports = config;

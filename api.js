@@ -1,6 +1,6 @@
-var Db = require('./dboperations');
+var Db = require('./dboperation');
 var Employee = require('./Employee');
-const dboperations = require('./dboperations');
+const dboperations = require('./dboperation');
 
 dboperations.getEmployee().then(result => {
     console.log(result);
